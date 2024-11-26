@@ -5,9 +5,16 @@ const Register = () => {
   return (
     <main className="bg-lightBg w-full">
       <div className="max-w-7xl m-auto ">
-        <form method="POST" className="my-10 mx-8 flex flex-col gap-8 justify-center items-center">
+        <form
+          method="POST"
+          className="my-10 mx-8 flex flex-col gap-8 justify-center items-center"
+        >
           <div className="">
-            <select name="userRole" className="px-4 py-2 outline-mainColor text-sm cursor-pointer" required>
+            <select
+              name="userRole"
+              className="px-4 py-2 outline-mainColor text-sm cursor-pointer"
+              required
+            >
               <option value="employee">Job Seeker(Employee)</option>
               <option value="employer">Job Provider(Employeer)</option>
             </select>
@@ -110,7 +117,12 @@ const Register = () => {
                 </div>
               </div>
             </div>
-          <button type="submit" className="bg-mainColor rounded-md sm:w-1/4 py-2 px-3 text-center cursor-pointer text-white hover:bg-hoverColor">Register Now</button>
+            <button
+              type="submit"
+              className="bg-mainColor rounded-md sm:w-1/4 py-2 px-3 text-center cursor-pointer text-white hover:bg-hoverColor"
+            >
+              Register Now
+            </button>
           </div>
         </form>
       </div>
