@@ -2,7 +2,7 @@ import React from "react";
 
 const PopularJob = ({ logo, companyName, role }) => {
   return (
-    <div className="w-[308px] h-[188px] bg-white rounded-md shadow-boxShadow flex flex-col p-3 justify-between hover:bg-highlight">
+    <div className="w-[290px] h-[188px] bg-white rounded-md shadow-boxShadow flex flex-col p-3 justify-between hover:bg-highlight">
       <div className="flex flex-col text-xs gap-1">
         <div className="w-[70px] border flex">
           <img src={logo} alt={companyName} className="w-full content-center object-cover"/>

@@ -203,12 +203,12 @@ const Home = () => {
       </section>
 
       {/* Team */}
-      <section className="bg-lightColor">
+      <section className="bg-lightColor w-full">
         <div className="max-w-7xl m-auto px-5 py-8 flex flex-col items-center justify-center gap-12">
           <h3 className="text-center text-4xl font-semibold text-mainColor">
             Our Team
           </h3>
-          <div className="flex justify-between gap-5">
+          <div className="flex flex-col xl:flex-row flex-wrap justify-between items-center gap-5 w-full">
             <TeamMember
               pic={assets.team1}
               name="Imani Poudel"
