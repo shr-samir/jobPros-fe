@@ -194,11 +194,13 @@ const Home = () => {
               role="Data Analyst / MIS"
             />
           </div>
-          <Link to="#">
-            <div className="bg-mainColor px-4 py-2 text-white rounded">
-              More Jobs ...
-            </div>
-          </Link>
+          <div className="flex items-start w-full">
+            <Link to="#">
+              <div className="bg-mainColor px-4 py-2 text-white rounded">
+                More Jobs ...
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
