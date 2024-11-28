@@ -8,7 +8,7 @@ const Login = () => {
       style={{
         backgroundImage: `linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(${assets.img3})`,
       }}
-      className="h-screen w-full bg-cover flex items-center justify-center p-10"
+      className="h-screen w-full bg-cover flex items-center justify-center p-10 min-h-screen"
     >
       <div className="max-w-[430px] h-[400px] bg-white w-full rounded-lg px-6 py-7 flex flex-col gap-5">
         <h6 className="font-semibold text-[28px] text-center">Login</h6>

@@ -143,7 +143,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="1 day 5 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -155,7 +155,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="2 days from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -167,7 +167,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -179,7 +179,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -191,7 +191,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -203,7 +203,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -215,7 +215,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -227,7 +227,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
@@ -239,7 +239,7 @@ const Jobs = () => {
               id={1}
               logo={assets.dataAnalyst}
               name="Digital Home International Electronics"
-              expiryDate="2024-12-25"
+              expiryDate="8 hours from now"
               role="Data Analyst / MIS"
               location="Thaiba, Lalitpur"
               salary="Negotiable"
