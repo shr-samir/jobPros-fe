@@ -10,7 +10,7 @@ const Jobs = () => {
           <h2 className="text-center text-3xl font-semibold text-mainColor">
             Filter Job
           </h2>
-          <div className="md:w-full bg-white px-3 py-4 rounded flex flex-col gap-8">
+          <form method="GET" className="md:w-full bg-white px-3 py-4 rounded flex flex-col gap-8">
             <div className="flex flex-col md:flex-row gap-5 w-full justify-between items-center">
               <div className="w-full md:w-1/2 flex flex-col gap-3 flex-wrap">
                 <label
@@ -126,13 +126,13 @@ const Jobs = () => {
             </div>
             <div>
               <button
-                type="button"
+                type="submit"
                 className="bg-mainColor hover:bg-hoverColor px-6 py-2 rounded cursor-pointer text-white"
               >
                 Filter
               </button>
             </div>
-          </div>
+          </form>
         </div>
         <div className="flex flex-col gap-8 mb-8">
           <h2 className="text-center text-3xl font-semibold text-mainColor">
