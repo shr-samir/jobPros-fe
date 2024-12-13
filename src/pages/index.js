@@ -4,5 +4,6 @@ import Contact from "./Contact";
 import Jobs from "./Jobs";
 import Login from "./Login";
 import Register from "./Register";
+import Employer from "./Employer";
 
-export { Home, About, Contact, Jobs, Login, Register };
+export { Home, About, Contact, Jobs, Login, Register, Employer };

@@ -114,15 +114,7 @@ const About = () => {
           <h3 className="text-mainColor font-semibold text-3xl">
             What Our Users Says
           </h3>
-          <div className="w-full">
-            {/* <ReviewCard
-              id={1}
-              pic={assets.reviewer1}
-              name="Nirjala Sapkota"
-              role="Junior UI Designer"
-              reveiwMsg="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid accusantium molestiae quisquam nam nihil soluta voluptatem aspernatur neque sit numquam?"
-              rating={4}
-            /> */}
+          <div className="w-full md:w-full overflow-hidden">
             <Carousel />
           </div>
         </div>

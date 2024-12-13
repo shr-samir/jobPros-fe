@@ -4,7 +4,7 @@ import { LuStar } from "react-icons/lu";
 const ReviewCard = ({ id, pic, name, role, reveiwMsg, rating }) => {
   return (
     <div
-      className="bg-lightColor rounded-md flex flex-col items-start justify-center gap-4 p-4"
+      className="bg-lightColor rounded-md flex flex-col items-start justify-center gap-4 p-4 w-full cursor-grab"
       key={id}
     >
       <div className="flex gap-4 items-center justify-center">

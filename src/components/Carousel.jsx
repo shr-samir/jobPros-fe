@@ -61,15 +61,12 @@ export const reviews = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid accusantium molestiae quisquam nam nihil soluta voluptatem aspernatur neque sit numquam?",
     rating: 4,
   },
-  
-
-
 ];
 
 const Carousel = () => {
   const options = {
     loop: true,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     align: "start",
   };
 
@@ -94,7 +91,7 @@ const Carousel = () => {
   }, [emblaApi]);
 
   return (
-    <div className="embla flex flex-col gap-4">
+    <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {reviews.map((review) => (
