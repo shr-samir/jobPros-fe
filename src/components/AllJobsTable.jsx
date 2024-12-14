@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/dialog";
 
 import { Button } from "./ui/button";
+import { EditJobForm } from ".";
 
 const AllJobsTable = () => {
   return (
@@ -40,6 +41,21 @@ const AllJobsTable = () => {
               <DialogTrigger>
                 <Button>Edit</Button>
               </DialogTrigger>
+              <DialogContent className="max-h-[80vh] overflow-y-auto">
+                <DialogHeader>
+                  <EditJobForm />
+                  {/* <DialogTitle>Are you absolutely sure?</DialogTitle>
+                  <DialogDescription>
+                    This action cannot be undone. This will permanently delete
+                    your account and remove your data from our servers.
+                  </DialogDescription> */}
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog>
+              <DialogTrigger>
+                <Button variant={"destructive"}>Delete</Button>
+              </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>Are you absolutely sure?</DialogTitle>
@@ -47,11 +63,16 @@ const AllJobsTable = () => {
                     This action cannot be undone. This will permanently delete
                     your account and remove your data from our servers.
                   </DialogDescription>
+                  <div className="flex gap-5">
+                    <Button type="button" className="bg-blue-600">
+                      Yes
+                    </Button>
+
+                    <Button variant={"destructive"}>No</Button>
+                  </div>
                 </DialogHeader>
               </DialogContent>
             </Dialog>
-
-            <Button variant={"destructive"}>Delete</Button>
           </TableCell>
         </TableRow>
       </TableBody>

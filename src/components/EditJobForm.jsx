@@ -54,7 +54,7 @@ const formSchema = z.object({
     }),
 });
 
-function CreateNewJobForm() {
+function EditJobForm() {
   // 1. Define your form.
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -251,10 +251,16 @@ function CreateNewJobForm() {
           )}
         />
 
-        <Button type="submit">Submit</Button>
+        <div className="flex gap-5">
+          <Button type="submit" className="bg-blue-600">
+            Save
+          </Button>
+
+          <Button variant={"destructive"}>Cancel</Button>
+        </div>
       </form>
     </Form>
   );
 }
 
-export default CreateNewJobForm;
+export default EditJobForm;
