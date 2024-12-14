@@ -30,7 +30,7 @@ const items = [
   },
   {
     title: "Add Job",
-    url: "#",
+    url: "/create-job",
     icon: BriefcaseBusiness,
   },
   {
@@ -85,7 +85,7 @@ function AppSidebar() {
                   <span>Account</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <span>Sign out</span>
+                  <span>Log out</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

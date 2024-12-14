@@ -10,6 +10,9 @@ import Carousel from "./Carousel";
 import AppSidebar from "./AppSidebar";
 import AllJobsTable from "./AllJobsTable";
 import { ProfileSettingsForm } from "./ProfileSettingsForm";
+import DashboardLayout from "./DashboardLayout";
+import JobDetails from "./JobDetails";
+import CreateNewJobForm from "./CreateNewJobForm";
 
 
-export { Navbar, Button, JobCategory, PopularJob, TeamMember, Footer, JobCard, ReviewCard, Carousel, AppSidebar, AllJobsTable, ProfileSettingsForm };
+export { Navbar, Button, JobCategory, PopularJob, TeamMember, Footer, JobCard, ReviewCard, Carousel, AppSidebar, AllJobsTable, ProfileSettingsForm, DashboardLayout, JobDetails, CreateNewJobForm};

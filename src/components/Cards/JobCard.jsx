@@ -52,7 +52,7 @@ const JobCard = ({
         </div>
       </div>
       <div className="w-full flex justify-between items-center">
-        <Link>
+        <Link to="/job-details">
           <div className="bg-mainColor text-white px-3 py-2 rounded hover:bg-hoverColor">
             View Details
           </div>

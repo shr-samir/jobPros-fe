@@ -4,6 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+
 import {
   Form,
   FormControl,
@@ -14,7 +16,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const formSchema = z.object({
   firstName: z.string().min(2, {
@@ -46,7 +54,7 @@ const formSchema = z.object({
     }),
 });
 
-export function ProfileSettingsForm() {
+function CreateNewJobForm() {
   // 1. Define your form.
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -67,12 +75,12 @@ export function ProfileSettingsForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
-          name="firstName"
+          name="jobRole"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>First Name</FormLabel>
+              <FormLabel>Role</FormLabel>
               <FormControl>
-                <Input placeholder="First Name" {...field} />
+                <Input placeholder="Software Developer" {...field} />
               </FormControl>
 
               <FormMessage />
@@ -81,27 +89,12 @@ export function ProfileSettingsForm() {
         />
         <FormField
           control={form.control}
-          name="lastName"
+          name="salary"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Last Name</FormLabel>
+              <FormLabel>Salary</FormLabel>
               <FormControl>
-                <Input placeholder="Last Name" {...field} />
-              </FormControl>
-
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Email" type="email" {...field} />
+                <Input type="number" {...field} />
               </FormControl>
 
               <FormMessage />
@@ -111,41 +104,21 @@ export function ProfileSettingsForm() {
 
         <FormField
           control={form.control}
-          name="address"
+          name="jobType"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Address</FormLabel>
+              <FormLabel>Job Type</FormLabel>
               <FormControl>
-                <Input placeholder="Address" {...field} />
-              </FormControl>
-
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="pinCode"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Pin Code</FormLabel>
-              <FormControl>
-                <Input placeholder="Pin Code" {...field} />
-              </FormControl>
-
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="password"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Password</FormLabel>
-              <FormControl>
-                <Input placeholder="Password" type="password" {...field} />
+                <Select>
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="onsite">On-site</SelectItem>
+                    <SelectItem value="hybrid">Hybrid</SelectItem>
+                    <SelectItem value="remote">Remote</SelectItem>
+                  </SelectContent>
+                </Select>
               </FormControl>
 
               <FormMessage />
@@ -155,13 +128,36 @@ export function ProfileSettingsForm() {
 
         <FormField
           control={form.control}
-          name="image"
+          name="jobType"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Logo/Profile Picture</FormLabel>
-                {/* <Label htmlFor="picture">Picture</Label> */}
+              <FormLabel>Schedule</FormLabel>
               <FormControl>
-                <Input id="picture" type="file" />
+                <Select>
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Schedule" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="dayShift">Day Shift</SelectItem>
+                    <SelectItem value="morningShift">Morning Shift</SelectItem>
+                    <SelectItem value="nightShift">Night Shift</SelectItem>
+                  </SelectContent>
+                </Select>
+              </FormControl>
+
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="jobDescription"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Job Description</FormLabel>
+              <FormControl>
+                <Textarea placeholder="Job Description (How you write here exactly displays on screen)"/>
               </FormControl>
 
               <FormMessage />
@@ -174,3 +170,5 @@ export function ProfileSettingsForm() {
     </Form>
   );
 }
+
+export default CreateNewJobForm;
